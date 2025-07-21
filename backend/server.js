@@ -13,5 +13,5 @@ const taskRoutes = require('./routes/tasks');
 app.use('/api/tasks', taskRoutes);
 
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => app.listen(5000, () => console.log("server running on port 5000")))
+    .then(() => app.listen(3000, () => console.log("server running on port 3000")))
 .catch(err => console.error(err));
